@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+body {
+  font-family: 'PT Serif', serif;
+  font-size: 1.2rem;
+  color: black;
+  margin: 0 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h4 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+button, input {
+  padding: 6px 10px;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+header .logo div {
+  -webkit-box-shadow: -8px 8px 0px 0px black;
+          box-shadow: -8px 8px 0px 0px black;
+  border: 2px solid black;
+  margin: 8px;
+  padding: 6px 10px;
+}
+
+header nav ul {
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul li {
+  padding: 6px 10px;
+}
+
+header .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .articles {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 5em;
+  margin-top: 2em;
+  background-color: chocolate;
+}
+
+header .articles article {
+  -webkit-box-shadow: -20px 20px 0px 0px black;
+          box-shadow: -20px 20px 0px 0px black;
+  border: 4px solid black;
+  margin: 20px;
+}
+
+header .articles article .info {
+  padding: 20px;
+  margin: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    -ms-grid-column: 1fr 1fr;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  header .logo {
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+  header .search {
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  header section.articles {
+    -ms-grid-column: 1fr 1fr;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*# sourceMappingURL=styles.css.map */
